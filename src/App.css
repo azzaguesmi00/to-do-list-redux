@@ -1,0 +1,33 @@
+/* App.css */
+
+#app {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+input {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: rgba(204, 204, 204, 0.713);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(7, 162, 7, 0.568);
+}
+
+ul li {
+  list-style: none;
+}
+
+.todo button {
+  margin: 5px;
+}
