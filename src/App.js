@@ -5,12 +5,12 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 
 const App = 
-({ todos, addTodo, removeTodo, toggleTodo }) => {
+({ todos, addTodos, removeTodo, toggleTodo }) => {
     const [text, setText] = useState("");
 
     const handleAddTodo = () => {
         if (text.trim() !== "") {
-            addTodo({
+            addTodos({
                 id: new Date().getTime(),
                 text,
                 completed: false,
@@ -72,7 +72,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    addTodo: (todo) => 
+    addTodos: (todo) => 
         dispatch({ 
             type: "ADD_TODO", 
             payload: todo 
